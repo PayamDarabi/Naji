@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lay_zheophisic"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:padding="@dimen/padding_8"
+        android:background="@drawable/refs_border"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgv_zheophisic"
+            android:layout_width="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="24dp"
+            app:srcCompat="@mipmap/ic_zheophisic" />
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/txt_zheophisic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/zhepphisic"
+            android:textColor="@color/itemstextcolor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:Customfont="parastoo.ttf" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lay_shahrdari"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:padding="@dimen/padding_8"
+        android:background="@drawable/refs_border"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgv_shahrdari"
+            android:layout_width="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/ic_shahrdari" />
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/txt_shahrdari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/shahrdari"
+            android:textColor="@color/itemstextcolor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:Customfont="parastoo.ttf" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lay_helalahmar"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:padding="@dimen/padding_8"
+        android:background="@drawable/refs_border"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgv_helalahmar"
+            android:layout_width="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="24dp"
+            app:srcCompat="@mipmap/ic_helal" />
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/txt_helalahmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/helalahmar"
+            android:textColor="@color/itemstextcolor"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:Customfont="parastoo.ttf" />
+
+    </LinearLayout>
+
+</LinearLayout>

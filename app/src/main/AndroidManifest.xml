@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.zelzele">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+<!--    <permission
+        android:name="com.googlemap_demo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />-->
+<!--
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />-->
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+   <!-- <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="false" />-->
+
+
+    <application
+        android:name=".Naji"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- The API key for Google Maps-based APIs. -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--
+            <receiver
+
+            android:name=".receivers.AutoSendLocation">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".general.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".general.activities.MapActivity"
+            android:parentActivityName=".general.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".general.activities.SafePlacesActivity"
+            android:parentActivityName=".general.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".general.activities.NajiActivity"
+            android:parentActivityName=".general.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".general.activities.SignalsActivity"
+            android:parentActivityName=".general.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".general.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".general.activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".general.activities.LearningTipsActivity"
+            android:parentActivityName=".general.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".general.activities.IntroductionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".general.activities.RefrencesActivity"
+            android:parentActivityName=".general.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".general.activities.DonateActivity"
+            android:parentActivityName=".general.activities.MainActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+    </application>
+
+</manifest>

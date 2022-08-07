@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_16"
+    android:paddingRight="@dimen/padding_24dp"
+    android:orientation="vertical" >
+
+    <ir.zelzele.customview.CustomTextView
+        android:id="@+id/lblListItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_20sp"
+        android:text="منطقه"
+        android:textColor="@color/black"
+        app:Customfont="parastoo.ttf"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft">
+
+    </ir.zelzele.customview.CustomTextView>
+
+</LinearLayout>

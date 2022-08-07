@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_main" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_events"
+            android:title="@string/events" />
+        <item
+            android:id="@+id/nav_naji"
+            android:icon="@drawable/ic_add_location"
+            android:title="@string/naji" />
+
+        <item
+            android:id="@+id/nav_tehranSafePlaces"
+            android:icon="@drawable/ic_safeplaces"
+            android:title="@string/tehransafes" />
+
+        <!--<item
+            android:id="@+id/nav_signals"
+            android:icon="@drawable/ic_add_alert"
+            android:title="@string/emrgency_signals" />-->
+
+        <item
+            android:id="@+id/leaningTips"
+            android:icon="@drawable/ic_information"
+            android:title="@string/telegramchannel" />
+
+    <!--    <item
+            android:id="@+id/nav_mostEarthQuicks"
+            android:icon="@drawable/ic_map"
+            android:title="@string/most_earthquicks" />
+
+-->
+        <item
+            android:id="@+id/nav_telegram"
+            android:icon="@drawable/ic_near_me"
+            android:title="@string/telegramtips" />
+    </group>
+    <group android:id="@+id/group_help" android:checkableBehavior="single">
+
+
+    <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/share_with_freinds" />
+
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_favorite"
+            android:title="@string/nav_rate_us" />
+
+
+
+        <item
+            android:id="@+id/nav_refrences"
+            android:icon="@drawable/ic_insert_drive_file"
+            android:title="@string/refs" />
+        <item
+            android:id="@+id/nav_donate"
+            android:icon="@drawable/ic_account_balance"
+            android:title="@string/donate" />
+    </group>
+        <!--   <item
+               android:id="@+id/nav_help"
+               android:icon="@drawable/ic_help"
+               android:title="@string/help" />-->
+
+    <group android:id="@+id/group_exit" android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_to"
+                android:title="@string/exit" />
+    </group>
+
+</menu>

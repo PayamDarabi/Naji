@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ir.zelzele.customview.CustomTextView
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="right"
+        android:textSize="14sp"
+        android:text="item"
+        android:textColor="#181818" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/txtCancel"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:text="@string/no"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/txtTryAgain"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/yes"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

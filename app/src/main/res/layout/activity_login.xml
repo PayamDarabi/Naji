@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:weightSum="100"
+
+    tools:context=".general.activities.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/prg_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicatorColor="@color/colorPrimaryDark"
+            app:indicatorName="BallPulseIndicator" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="bottom"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="@color/white"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textDirection="anyRtl" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/txt_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="لطفا این کد را وارد کنید :"
+            android:textColor="@color/white"
+            app:Customfont="parastoo.ttf" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textDirection="anyRtl" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <ir.zelzele.customview.CustomButtonView
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/loginRegister"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:gravity="center">
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/ctv_notRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NotRegister"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_22sp"
+            android:textStyle="bold"
+            app:Customfont="parastoo-Bold.ttf" />
+    </LinearLayout>
+
+
+    <!--
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:id="@+id/progress_login"/>
+        -->
+</LinearLayout>

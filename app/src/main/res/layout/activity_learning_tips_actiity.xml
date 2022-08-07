@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".general.activities.LearningTipsActivity">
+
+    <androidx.core.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLearns_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ExpandableListView
+        android:id="@+id/lvExp_learns"
+        android:groupIndicator="@null"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</androidx.core.widget.SwipeRefreshLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/prg_learns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/colorAccent"
+        app:indicatorName="BallZigZagIndicator" />
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/txt_nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nothing"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/font_size_18sp"
+            android:visibility="gone"
+            app:Customfont="parastoo-Bold.ttf" />
+
+ </RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#c1eeeeee"
+    android:layout_height="match_parent"
+    tools:context="ir.zelzele.general.activities.NajiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_16"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="8"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content">
+
+            <ir.zelzele.customview.CustomTextView
+                android:id="@+id/txt_autoSend_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/auto_send_location"
+                android:textSize="18sp"
+                app:Customfont="parastoo.ttf" />
+
+                <ir.zelzele.customview.CustomTextView
+                    android:id="@+id/txt_autoSend_location_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ed8a8a"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/auto_send_hint"
+                    android:textSize="14sp"
+                    app:Customfont="parastoo.ttf" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swc_autoLoc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_weight="2"
+                android:checked="false" />
+
+
+        </LinearLayout>
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/ctv_curLoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/curLoc"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_16"
+            android:gravity="center_horizontal"
+            app:Customfont="parastoo-Bold.ttf"
+            android:textSize="18sp"/>
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/ctv_curLocAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:Customfont="parastoo.ttf"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"/>
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/ctv_lastLocTimeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="زمان آخرین موقعیت مکانی ارسال شده شما: "
+            app:Customfont="parastoo-Bold.ttf"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_16"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"/>
+
+        <ir.zelzele.customview.CustomTextView
+            android:id="@+id/ctv_lastLocTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-:-"
+            app:Customfont="parastoo.ttf"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"/>
+        <androidx.appcompat.widget.CardView
+            android:id="@+id/card_map_circle"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="300dp"
+            app:cardCornerRadius="85dp">
+        <fragment
+            android:id="@+id/naji_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ctv_curLoc"
+            tools:context=".general.activities.NajiActivity" />
+        </androidx.appcompat.widget.CardView>
+    </LinearLayout>
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:layout_height="wrap_content"
+       android:id="@+id/linearLayout2"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true">
+
+       <com.wang.avi.AVLoadingIndicatorView
+           android:id="@+id/prg_sendLoc"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           app:indicatorColor="@color/colorAccent"
+           app:indicatorName="BallPulseIndicator" />
+
+       <ir.zelzele.customview.CustomButtonView
+           android:id="@+id/btn_sendLocationManual"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/margin_16"
+           android:layout_marginTop="48dp"
+           android:background="@drawable/round_button"
+           android:padding="@dimen/margin_8"
+           android:visibility="gone"
+           android:textStyle="bold"
+           android:text="ارسال موقعیت به سرور" />
+
+   </LinearLayout>
+
+
+
+</RelativeLayout>

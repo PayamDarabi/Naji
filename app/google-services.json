@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "110676553987",
+    "firebase_url": "https://zelzele-d2773.firebaseio.com",
+    "project_id": "zelzele-d2773",
+    "storage_bucket": "zelzele-d2773.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110676553987:android:3fbcbbd26ad4f98f",
+        "android_client_info": {
+          "package_name": "ir.zelzele"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110676553987-33s43mrj8v2mqs74grfh8gjkjlo4pgc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3WUOEm7HXyk9yMSyQBq6tNpXRwOA8a1o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="RectangleImageview">
+        <attr name="widthAndHeightRatio" format="float"/>
+        <attr name="ratioIsWidthBase" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="TextViewWithCustomFont">
+        <attr name="Customfont" format="string"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C62828</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#FF8F00</color>
+    <color name="itemstexthintcolor">#d1e2e2e2</color>
+    <color name="itemstextcolor">#a00039</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+
+    <color name="emergency_red">#ac5555</color>
+    <color name="emergency_yellow">#fdcdbf00</color>
+    <color name="safe_green">#068f48</color>
+
+    <color name="emRed">#D32F2F</color>
+    <color name="emYellow1">#FDD835</color>
+    <color name="emYellow2">#FFB300</color>
+    <color name="emGreen1">#9CCC65</color>
+    <color name="emGreen2">#4CAF50</color>
+
+    <color name="emRedtextColor">#FFF</color>
+    <color name="emYellowtextColor">#000</color>
+    <color name="emGreentextColor">#000</color>
+</resources>
